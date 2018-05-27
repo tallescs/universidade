@@ -20,7 +20,7 @@ namespace universidadeCoreWeb.Controllers
         public IActionResult Index()
         {
             var model = configuration["Greeting"];
-            return View(model);
+            return View("Index", model);
         }
 
         public IActionResult About()
